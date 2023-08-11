@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background: #081b20;
+    color: white;
+}
+.header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.name {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.navbar {
+    display: flex;
+}
+.navbar a {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent ;
+    transition: all .45s ease;
+
+}
+.navbar a:hover {
+    border-bottom: 2px solid rgb(130, 130, 25);
+    transition: .5s smooth;
+}
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-content {
+    max-width: 600px;
+}
+.home-content h1 {
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: 700;
+}
+.home-content h3 {
+    margin-top: auto;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    color: bisque;
+}
+.img {
+    margin-top: -50px;
+    margin-left: 147px;
+}
+.img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.circular--square {
+    width: 100%;
+    height: auto;
+}
+.home-content .btn {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 30px;
+}
+.btn a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: rgb(2, 129, 240);
+    border: 2px solid rgb(6, 104, 164);
+    border-radius: 10px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.logo {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-top: -75%;
+    background: transparent;
+    border: 2px solid yellowgreen;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .45s ease;
+}
+.logo a:hover {
+    color: #081b29;
+}
+.logo a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(6, 82, 80);
+    z-index: -1;
+    transition: .45s ease;
+}
+.logo a:hover::before {
+    width: 100%;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+}
+.about-img {
+    margin-inline: auto;
+    margin-top: 4%;
+    margin-left: 5%;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.about-content {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+.about-content h2 {
+    font-size: 45px;
+    margin-bottom: var(--bottom-margin);
+}
+.about-content p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+}
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 4.5rem;
+}
+.skill-title {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+.icon {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 60px;
+}
+img:hover
+{
+  border:8px solid #081b20;
+}
+.projects {
+    background-color: var(--bg-color);
+    padding: 32px 0; 
+    margin-top: 2rem;
+}  
+.proj-work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 21.875rem;
+}
+.projects-title {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-bottom: var(--bottom-margin);
+}  
+.project-details {
+    font-size: 19px;
+    margin-top: 20%; 
+    margin-bottom: 50px; 
+}
+.proj-work
+{
+    height: 150%;
+    width: 400px;
+    display: inline-block;
+    background-color: rgb(2, 22, 26);
+    margin: 90px;
+    text-align: center;
+    border-radius: 13px;
+    font-size: 25px;
+}
+.proj-work:hover
+{
+    border:8px solid rgb(4, 60, 33);
+
+}
+.contact {
+    margin-top: 2rem;
+}
+  
+.contact h2 {
+    font-size: 45px ;
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+}
+footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
+  
+.contact-form{
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+.contact-form label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+}
+  
+.contact-form textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+}
+  
+.contact-form .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset var(--primary-color);
+    font-size: 0.875rem;
+    outline: none;
+}
+.input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+.submit-btn {
+    background-color: rgb(5, 31, 60);
+	border: 2px solid #777;
+	border-radius: 5px;
+	font-size: 21px;
+	display: block;
+	width: 50%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+    margin-left: 320px;
+}
+.submit-btn:hover {
+    background-color: rgb(2, 22, 26);
+    border: 2px solid rgb(6, 82, 80);
+    cursor: pointer;
+}
